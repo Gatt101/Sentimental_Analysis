@@ -1,0 +1,7 @@
+python -m venv .venv
+.venv\scripts\activate                                                            
+
+py -m pip install --upgrade pip
+py -m pip --version
+
+py -m pip install flask
