@@ -21,6 +21,8 @@
     "@angular/platform-server": "^17.1.0",
     "@angular/router": "^17.1.0",
     "@angular/ssr": "^17.1.3",
+    "@omnedia/ngx-aurora": "^2.0.0",
+    "@omnedia/ngx-border-beam": "^2.0.0",
     "@tailwindcss/postcss": "^4.0.2",
     "express": "^4.18.2",
     "frontend": "file:",
