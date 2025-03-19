@@ -1,60 +1,61 @@
 <om-aurora class="absolute top-0 left-0 w-full min-h-screen">
-    <div class="container mx-auto px-4 pt-28 pb-12">
-      
-      <!-- Sentiment Analysis Section -->
-      <div class="w-full bg-slate-900/40 p-8 text-center flex flex-col items-center gap-8 rounded-2xl">
-        <h1 class="text-4xl font-bold text-white">Sentiment Analysis</h1>
-        <om-border-beam>
-            <div class="max-w-4xl h-auto border border-white/10 rounded-xl bg-white/10">
-                <p class="text-lg font-mono text-white/90 p-6">
-                    Multilingual sentiment analysis involves detecting emotions, opinions, and attitudes expressed in different languages. It helps in understanding diverse linguistic structures, cultural nuances, and varying sentiment expressions.
-                </p>
-            </div>
-        </om-border-beam>
-      </div>
-  
-      <!-- Content Section -->
-      <div class="w-full bg-slate-900/40 p-8 grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 rounded-2xl">
-        
-        <!-- Input Section -->
-        <div class="flex flex-col gap-4">
-          <h2 class="text-2xl font-bold text-white">Enter Text</h2>
-          <div class="flex-1 relative">
-              <textarea
-                  id="editor"
-                  [(ngModel)]="sentimentText"
-                  class="w-full h-full min-h-[400px] rounded-xl 
-                         bg-white/10 border border-white/10 
-                         text-white/90 p-6 resize-none
-                         focus:outline-none focus:ring-2 focus:ring-blue-500/50
-                         placeholder:text-white/50"
-                  placeholder="Enter text for sentiment analysis..."
-                  required
-              ></textarea>
-          </div>
-          
-          <div class="flex justify-center">
-              <button 
-                  (click)="analyzeSentiment()"
-                  class="px-12 py-3 text-base font-medium text-white
-                         bg-blue-600/90 rounded-lg hover:bg-blue-700
-                         transition-colors focus:ring-2 focus:ring-blue-500/50
-                         border border-blue-500/30">
-                  Analyze
-              </button>
-          </div>
-        </div>
-  
-        <!-- Result Section -->
-        <div class="flex flex-col gap-4">
-          <h2 class="text-2xl font-bold text-white">Analysis Result</h2>
-          <div class="flex-1 rounded-xl bg-white/10 border border-white/10 p-6">
-            <div class="h-full">
-              <p class="text-white/70">The sentiment analysis results will appear here...</p>
-            </div>
-          </div>
-        </div>
+  <div class="container mx-auto px-4 pt-28 pb-12">
 
-      </div>
+    <!-- Sentiment Analysis Section -->
+    <div class="w-full p-8 text-center flex flex-col items-center gap-8 rounded-2xl ">
+      <h1 class="text-4xl font-bold text-white mb-4">Sentiment Analysis</h1>
+      <om-border-beam>
+        <div class="max-w-4xl h-auto border border-white/10 rounded-xl bg-white/10">
+          <p class="text-lg font-mono text-white/90 p-6">
+            Multilingual sentiment analysis involves detecting emotions, opinions, and attitudes expressed in different languages. It helps in understanding diverse linguistic structures, cultural nuances, and varying sentiment expressions.
+          </p>
+        </div>
+      </om-border-beam>
     </div>
+
+    <!-- Content Section -->
+    <div class="w-full p-8 grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 rounded-2xl">
+
+      <!-- Input Section -->
+      <div class="flex flex-col gap-6">
+        <h2 class="text-2xl font-bold text-white mb-2 text-center">Enter Text</h2>
+        <div class="flex-1 relative">
+          <textarea
+            id="editor"
+            [(ngModel)]="sentimentText"
+            class="w-full h-full min-h-[400px] rounded-xl
+                   bg-white/10 border border-white/10
+                   text-white/90 p-6 resize-none
+                   focus:outline-none focus:ring-2 focus:ring-blue-500/50
+                   placeholder:text-white/50 backdrop-blur-sm"
+            placeholder="Enter text for sentiment analysis..."
+            required
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Result Section -->
+      <div class="flex flex-col gap-6">
+        <h2 class="text-2xl font-bold text-white mb-2 text-center">Analysis Result</h2>
+        <div class="flex-1 rounded-xl bg-white/10 border border-white/10 p-6 backdrop-blur-sm">
+          <div class="h-full">
+            <p class="text-white/70">The sentiment analysis results will appear here...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Analyze Button (Centered Between Columns) -->
+      <div class="col-span-full flex justify-center mt-6">
+        <button
+          (click)="analyzeSentiment()"
+          class="px-12 py-3 text-base font-medium text-white
+                 bg-blue-600/90 rounded-lg hover:bg-blue-700
+                 transition-colors focus:ring-2 focus:ring-blue-500/50
+                 border border-blue-500/30 shadow-md hover:shadow-lg">
+          Analyze
+        </button>
+      </div>
+
+    </div>
+  </div>
 </om-aurora>
