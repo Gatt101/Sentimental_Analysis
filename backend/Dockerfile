@@ -1,5 +1,6 @@
-FROM python:3.8-slim-buster
+FROM python:3.13.0a4-slim
 WORKDIR /python-docker
+
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y gcc build-essential
