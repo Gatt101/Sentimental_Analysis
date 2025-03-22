@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class SentimentService {
   constructor(private http: HttpClient) { }
-  apiurl='http://localhost:5000/sentiment';
+  apiurl= `${environment.apiUrl}/sentiment`;
 
 
   analyzeSentiment(text: string) {
