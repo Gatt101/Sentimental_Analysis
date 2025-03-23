@@ -7,7 +7,7 @@ import {environment} from "../../environments/environment";
 })
 export class SentimentService {
   constructor(private http: HttpClient) { }
-  apiurl= `${environment.apiUrl}/sentiment`;
+  apiurl= `${environment.apiUrl}/analyze_sentiment`;
 
 
   analyzeSentiment(text: string) {

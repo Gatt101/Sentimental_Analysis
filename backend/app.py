@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 app = Flask(__name__)
-CORS(app , resources={r"/*": {"origins": "*"}})
+CORS(app)
 
 model_name = "tabularisai/multilingual-sentiment-analysis"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
