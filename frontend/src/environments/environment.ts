@@ -1,4 +1,4 @@
 export const environment = {
   production:false,
-  apiUrl: 'https://sentimental-analysis-kqyl.onrender.com'
+  apiUrl: 'http://127.0.0.1:5000'
 };

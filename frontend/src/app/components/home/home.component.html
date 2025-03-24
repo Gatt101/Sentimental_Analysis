@@ -15,7 +15,6 @@
 
     <!-- Content Section -->
     <div class="w-full p-8 grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 rounded-2xl">
-
       <!-- Input Section -->
       <div class="flex flex-col gap-6">
         <h2 class="text-2xl font-bold text-white mb-2 text-center">Enter Text</h2>
@@ -34,13 +33,15 @@
         </div>
       </div>
 
-      <!-- Result Section -->
+
       <!-- Result Section -->
       <div class="flex flex-col gap-6">
         <h2 class="text-2xl font-bold text-white mb-2 text-center">Analysis Result</h2>
         <div class="flex-1 rounded-xl bg-white/10 border border-white/10 p-6 backdrop-blur-sm">
           <div class="h-full" *ngIf="sentimentResult !== '' else noResult">
-            <h2 class="text-white/70 text-2xl">{{ sentimentResult }}</h2>
+            <h2 class="text-white/70 text-2xl font-bold text-center">
+                   {{ sentimentResult }}
+            </h2>
           </div>
           <ng-template #noResult>
             <p class="text-white/70">The sentiment analysis results will appear here...</p>
@@ -49,7 +50,7 @@
       </div>
 
       <!-- Analyze Button (Centered Between Columns) -->
-      <div class="col-span-full flex justify-center mt-6">
+      <div class="col-span-full flex justify-center mt-6 gap-3.5">
         <button
           (click)="analyzeSentiment()"
           class="px-12 py-3 text-base font-medium text-white
@@ -57,6 +58,14 @@
                  transition-colors focus:ring-2 focus:ring-blue-500/50
                  border border-blue-500/30 shadow-md hover:shadow-lg">
           Analyze
+        </button>
+        <button
+          (click)="reset()"
+          class="px-12 py-3 text-base font-medium text-white
+                 bg-blue-600/90 rounded-lg hover:bg-blue-700
+                 transition-colors focus:ring-2 focus:ring-blue-500/50
+                 border border-blue-500/30 shadow-md hover:shadow-lg">
+          Reset
         </button>
       </div>
 

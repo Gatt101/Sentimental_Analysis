@@ -17,11 +17,18 @@ export class HomeComponent {
   sentimentText: string = '';
   sentimentResult: String = '';
 
-  constructor(private sentimentService: SentimentService) { }
+  constructor(private sentimentService: SentimentService) {
+
+  }
   analyzeSentiment() {
   this.sentimentService.analyzeSentiment(this.sentimentText).subscribe((data: any) => {
     this.sentimentResult = data;
     console.log(data);
   });
   }
+  reset(){
+    this.sentimentText = '';
+    this.sentimentResult = '';
+  }
+
 }
