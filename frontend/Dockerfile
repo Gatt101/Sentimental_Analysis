@@ -4,12 +4,12 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install -g @angular/cli@17.1.3
+# Install dependencies and Angular CLI locally
 RUN npm install --legacy-peer-deps
-
 
 COPY . .
 
 EXPOSE 4200
 
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+# Use npx to run Angular CLI from node_modules
+CMD ["npx", "ng", "serve", "--host", "0.0.0.0"]
