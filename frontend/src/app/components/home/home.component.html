@@ -13,21 +13,45 @@
       </om-border-beam>
     </div>
 
-    <div class="container mx-auto px-4 py-12">
-      <div class="flex justify-center items-center gap-4">
-        <!-- Banner Section -->
-        <div class="w-full bg-blue-600 text-white p-8 rounded-lg shadow-lg">
-          <h2 class="text-3xl font-bold mb-4 text-center">Our Features</h2>
-          <ul class="list-disc list-inside space-y-2">
-            <li>Feature 1: High performance and scalability</li>
-            <li>Feature 2: User-friendly interface</li>
-            <li>Feature 3: Advanced security measures</li>
-            <li>Feature 4: Seamless integration with other tools</li>
-            <li>Feature 5: 24/7 customer support</li>
-          </ul>
+    <!-- Enhanced Banner Section with Large Logos -->
+    <div class="w-full backdrop-blur-sm text-white p-10 rounded-2xl border border-white/10 relative overflow-hidden mt-8 shadow-[0_0_20px_rgba(124,58,237,0.1)]">
+      <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-30">
+        <!-- Large Logo Background Elements -->
+        <div class="absolute -left-20 -top-20 opacity-20">
+          <i class="fas fa-tachometer-alt text-[200px] text-blue-300/30"></i>
+        </div>
+        <div class="absolute -right-20 -bottom-20 opacity-20">
+          <i class="fas fa-headset text-[200px] text-pink-300/30"></i>
         </div>
       </div>
+
+      <div class="relative z-10">
+        <h2 class="text-4xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-300">Our Features</h2>
+        <ul class="list-none grid grid-cols-1 md:grid-cols-5 gap-6 text-center font-medium">
+          <li class="flex flex-col items-center justify-center gap-3 text-white/90 hover:text-white transition-colors p-4">
+            <i class="fas fa-tachometer-alt text-5xl text-blue-300"></i>
+            <span>High performance<br>and scalability</span>
+          </li>
+          <li class="flex flex-col items-center justify-center gap-3 text-white/90 hover:text-white transition-colors p-4">
+            <i class="fas fa-user-friends text-5xl text-purple-300"></i>
+            <span>User-friendly<br>interface</span>
+          </li>
+          <li class="flex flex-col items-center justify-center gap-3 text-white/90 hover:text-white transition-colors p-4">
+            <i class="fas fa-shield-alt text-5xl text-green-300"></i>
+            <span>Advanced security<br>measures</span>
+          </li>
+          <li class="flex flex-col items-center justify-center gap-3 text-white/90 hover:text-white transition-colors p-4">
+            <i class="fas fa-tools text-5xl text-yellow-300"></i>
+            <span>Seamless integration<br>with other tools</span>
+          </li>
+          <li class="flex flex-col items-center justify-center gap-3 text-white/90 hover:text-white transition-colors p-4">
+            <i class="fas fa-headset text-5xl text-pink-300"></i>
+            <span>24/7 customer<br>support</span>
+          </li>
+        </ul>
+      </div>
     </div>
+
 
     <!-- Content Section -->
     <div class="w-full p-8 grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 rounded-2xl">
