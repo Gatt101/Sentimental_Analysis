@@ -4,12 +4,12 @@ import { NgxBorderBeamComponent } from '@omnedia/ngx-border-beam';
 import { FormsModule } from '@angular/forms';
 import { SentimentService } from '../../services/sentiment.service';
 import {HttpClientModule} from "@angular/common/http";
-import {NgIf} from "@angular/common";
+import {CommonModule, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgxBorderBeamComponent, NgxAuroraComponent, FormsModule, HttpClientModule, NgIf],
+  imports: [NgxBorderBeamComponent, NgxAuroraComponent, FormsModule, HttpClientModule, NgIf,CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
