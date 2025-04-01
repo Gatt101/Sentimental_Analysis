@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.1.0",
+    "@angular/animations": "^19.2.4",
     "@angular/common": "^17.1.0",
     "@angular/compiler": "^17.1.0",
     "@angular/core": "^17.1.0",
@@ -23,7 +23,9 @@
     "@angular/ssr": "^17.1.3",
     "@omnedia/ngx-aurora": "^2.0.0",
     "@omnedia/ngx-border-beam": "^2.0.0",
+    "@omnedia/ngx-fade": "^2.1.0",
     "@omnedia/ngx-gradient-text": "^2.0.0",
+    "@omnedia/ngx-shiny-text": "^2.0.0",
     "@omnedia/ngx-typewriter": "^2.0.0",
     "@omnedia/rxjs-typewriter": "^1.1.0",
     "@tailwindcss/postcss": "^4.0.2",

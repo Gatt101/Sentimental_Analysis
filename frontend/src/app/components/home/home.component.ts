@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { SentimentService } from '../../services/sentiment.service';
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule, NgIf} from "@angular/common";
+import {NgxFadeComponent} from "@omnedia/ngx-fade";
+import {RouterModule} from "@angular/router";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgxBorderBeamComponent, NgxAuroraComponent, FormsModule, HttpClientModule, NgIf,CommonModule],
+  imports: [NgxBorderBeamComponent, NgxAuroraComponent, FormsModule, HttpClientModule, NgIf, CommonModule, NgxFadeComponent,RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
