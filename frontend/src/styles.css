@@ -1,1 +1,5 @@
 @import "tailwindcss";
+/* Prevent horizontal overflow globally */
+body, html {
+  overflow-x: hidden;
+}
